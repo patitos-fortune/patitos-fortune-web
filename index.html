@@ -31,6 +31,48 @@
 
     </main>
 
+    <!--
+    ==================================================
+    PATITOS' FORTUNE RETRO VISITOR COUNTER
+
+    Desired display:
+    🦆 PATITO 000042 HAS WADDLED THROUGH HERE
+
+    Backend TODO:
+    Add persistent counter via serverless function.
+    CounterAPI V1 was discontinued Aug 7, 2026.
+
+    CSS already exists:
+    .visitor-counter
+    .counter-digits
+    ==================================================
+    -->
+    <!-- <div class="visitor-counter">
+        <span>🦆 PATITO</span>
+    
+        <span id="visitor-number" class="counter-digits">
+            000000
+        </span>
+    
+        <span>HAS WADDLED THROUGH HERE</span>
+    </div>
+    
+    <script>
+        fetch("https://hits.sh/patitosfortune.com.svg?view=total")
+            .then(response => response.text())
+            .then(svg => {
+                const match = svg.match(/>\s*([0-9]+)\s*</);
+
+                if (match) {
+                    const count = match[1].padStart(6, "0");
+                    document.getElementById("visitor-number").textContent = count;
+                }
+            })
+            .catch(() => {
+                document.getElementById("visitor-number").textContent = "------";
+            });
+    </script> -->
+
     <footer>
         © 2026 Patitos' Fortune (A+P)
     </footer>

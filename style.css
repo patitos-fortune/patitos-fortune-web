@@ -143,3 +143,44 @@ footer {
         transform: translateY(-10px) rotate(2deg);
     }
 }
+
+/* .visitor-counter {
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 9px;
+    letter-spacing: 0.18em;
+
+    color: #718697;
+
+    text-transform: uppercase;
+}
+
+.counter-digits {
+    padding: 4px 7px;
+
+    background: #061019;
+
+    border: 1px solid #334653;
+    border-radius: 3px;
+
+    color: #f2c86b;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 0.14em;
+
+    box-shadow:
+        inset 0 0 8px rgba(0, 0, 0, 0.65),
+        0 0 6px rgba(242, 200, 107, 0.08);
+} */
