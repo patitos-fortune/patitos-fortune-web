@@ -45,9 +45,26 @@
     CSS already exists:
     .visitor-counter
     .counter-digits
+    currently using https://hits.donaldzou.dev 
     ==================================================
     -->
-    <!-- <div class="visitor-counter">
+
+    <script>
+    fetch("https://hitscounter.dev/api/hit?output=json&url=https%3A%2F%2Fpatitosfortune.com")
+        .then(response => response.json())
+        .then(data => {
+            const count = String(data.total_hits).padStart(6, "0");
+
+            document.getElementById("visitor-number").textContent = count;
+        })
+        .catch(error => {
+            console.error("Visitor counter failed:", error);
+
+            document.getElementById("visitor-number").textContent = "------";
+        });
+    </script>
+
+   <div class="visitor-counter">
         <span>🦆 PATITO</span>
     
         <span id="visitor-number" class="counter-digits">
@@ -55,9 +72,8 @@
         </span>
     
         <span>HAS WADDLED THROUGH HERE</span>
-    </div>
-    
-    <script>
+    </div> 
+    <!-- <script>
         fetch("https://hits.sh/patitosfortune.com.svg?view=total")
             .then(response => response.text())
             .then(svg => {
@@ -71,7 +87,7 @@
             .catch(() => {
                 document.getElementById("visitor-number").textContent = "------";
             });
-    </script> -->
+    </script> --> 
 
     <footer>
         © 2026 Patitos' Fortune (A+P)
