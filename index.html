@@ -3,94 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patitos Fortune is a small independent software lab exploring curious ideas and turning them into useful software.">
+    <meta name="theme-color" content="#F5F0E6">
 
-    <title>Patitos' Fortune</title>
+    <title>Patitos Fortune — Creative Software Lab</title>
 
+    <link rel="icon" href="assets/geometric-duck.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Patitos Fortune home">
+            <img src="assets/geometric-duck.svg" alt="" width="48" height="48">
+            <span>Patitos Fortune</span>
+        </a>
 
-    <main class="landing">
+        <nav aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#method">Method</a>
+            <a href="#people">People</a>
+            <a href="mailto:hello@patitosfortune.com">Contact</a>
+        </nav>
+    </header>
 
-        <div class="duck">🦆</div>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Creative Software Lab · Malta · Est. 2025</p>
 
-        <h1>PATITOS' FORTUNE</h1>
+                <h1>Curious ideas,<br>made useful.</h1>
 
-        <p class="tagline">
-            Data · Investing · Curiosity
-        </p>
+                <p class="lede">
+                    Patitos Fortune is a small, independent software lab working across
+                    games, data, research and decision tools.
+                </p>
 
-        <div class="divider"></div>
+                <div class="hero-actions">
+                    <a class="button primary" href="#work">See what is in the lab</a>
+                    <a class="button secondary" href="mailto:hello@patitosfortune.com">hello@patitosfortune.com</a>
+                </div>
+            </div>
 
-        <h2>Something is hatching.</h2>
+            <div class="hero-mark" aria-hidden="true">
+                <div class="specimen-label">PF / 001</div>
+                <img src="assets/geometric-duck.svg" alt="" width="320" height="320">
+                <div class="specimen-meta">Impossible Duck · canonical geometry</div>
+            </div>
+        </section>
 
-        <p class="coming-soon">
-            Coming soon
-        </p>
+        <section class="section" id="work">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Experiments that became tools.</h2>
+                <p>
+                    We like problems with enough structure to test, enough uncertainty to explore,
+                    and enough personality to be worth building.
+                </p>
+            </div>
 
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-index">01</span>
+                    <h3>SUMpossible</h3>
+                    <p>
+                        A mathematical puzzle game built around expression discovery,
+                        progression and carefully validated puzzle generation.
+                    </p>
+                    <span class="project-tag">Puzzles · Product</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-index">02</span>
+                    <h3>Patitos Learning</h3>
+                    <p>
+                        A knowledge-discovery system for turning outside ideas into
+                        tested, reusable methods instead of a pile of bookmarks.
+                    </p>
+                    <span class="project-tag">Research · Learning</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-index">03</span>
+                    <h3>Game Companion</h3>
+                    <p>
+                        Decision-support software that turns complex game systems into
+                        explainable, testable recommendations.
+                    </p>
+                    <span class="project-tag">Tools · Decision systems</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-index">04</span>
+                    <h3>Simulation &amp; research</h3>
+                    <p>
+                        Small experimental systems for game design, probability,
+                        behavioural modelling and quantitative analysis.
+                    </p>
+                    <span class="project-tag">Simulation · Data</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section method" id="method">
+            <div class="section-heading">
+                <p class="eyebrow">How we work</p>
+                <h2>AI-native, evidence-minded.</h2>
+            </div>
+
+            <div class="method-layout">
+                <p class="method-lede">
+                    Claude is part of our day-to-day research, implementation, review and
+                    experimental workflow. We use AI agents to turn specifications into tested
+                    artefacts, challenge assumptions, review evidence and accelerate iteration
+                    without outsourcing judgement.
+                </p>
+
+                <div class="method-notes" aria-label="Working principles">
+                    <div>
+                        <span>01</span>
+                        <p>Specify before scaling.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <p>Test claims, not vibes.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <p>Keep the human decision visible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section people" id="people">
+            <div class="section-heading">
+                <p class="eyebrow">People</p>
+                <h2>Two people, one small lab.</h2>
+            </div>
+
+            <div class="people-grid">
+                <article>
+                    <h3>Patricia</h3>
+                    <p>Product, games and quantitative research.</p>
+                </article>
+
+                <article>
+                    <h3>Anna</h3>
+                    <p>Data, analytics and decision systems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-band">
+            <p class="eyebrow">Say hello</p>
+            <h2>Have a curious problem?</h2>
+            <a href="mailto:hello@patitosfortune.com">hello@patitosfortune.com</a>
+        </section>
     </main>
 
-    <!--
-    ==================================================
-    PATITOS' FORTUNE RETRO VISITOR COUNTER
-
-    Desired display:
-    🦆 PATITO 000042 HAS WADDLED THROUGH HERE
-
-    Backend TODO:
-    Add persistent counter via serverless function.
-    CounterAPI V1 was discontinued Aug 7, 2026.
-
-    CSS already exists:
-    .visitor-counter
-    .counter-digits
-    currently using https://hits.donaldzou.dev 
-    ==================================================
-    -->
-
-    <script>
-    fetch("https://hitscounter.dev/api/hit?output=json&url=https%3A%2F%2Fpatitosfortune.com")
-        .then(response => response.json())
-        .then(data => {
-            const count = String(data.total_hits).padStart(6, "0");
-
-            document.getElementById("visitor-number").textContent = count;
-        })
-        .catch(error => {
-            console.error("Visitor counter failed:", error);
-
-            document.getElementById("visitor-number").textContent = "------";
-        });
-    </script>
-
-   <div class="visitor-counter">
-        <span>🦆 PATITO</span>
-    
-        <span id="visitor-number" class="counter-digits">
-            000000
-        </span>
-    
-        <span>HAS WADDLED THROUGH HERE</span>
-    </div> 
-    <!-- <script>
-        fetch("https://hits.sh/patitosfortune.com.svg?view=total")
-            .then(response => response.text())
-            .then(svg => {
-                const match = svg.match(/>\s*([0-9]+)\s*</);
-
-                if (match) {
-                    const count = match[1].padStart(6, "0");
-                    document.getElementById("visitor-number").textContent = count;
-                }
-            })
-            .catch(() => {
-                document.getElementById("visitor-number").textContent = "------";
-            });
-    </script> --> 
-
     <footer>
-        © 2026 Patitos' Fortune (A+P)
+        <span>© 2026 Patitos Fortune · Malta</span>
+        <a class="hatch-link" href="hatch/" aria-label="Visit the original Patitos Fortune launch page" title="The original hatchling">🦆</a>
     </footer>
 
     <!-- Cloudflare Web Analytics -->
@@ -100,8 +174,5 @@
         data-cf-beacon='{"token": "70a8d113a5ee4e5bb79f6a483252250e"}'>
     </script>
     <!-- End Cloudflare Web Analytics -->
-
-</body>
-</html>
 </body>
 </html>
