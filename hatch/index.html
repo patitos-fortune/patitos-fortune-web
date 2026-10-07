@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patitos' Fortune</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="landing">
+
+        <div class="duck">🦆</div>
+
+        <h1>PATITOS' FORTUNE</h1>
+
+        <p class="tagline">
+            Data · Investing · Curiosity
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>Something is hatching.</h2>
+
+        <p class="coming-soon">
+            Coming soon
+        </p>
+
+    </main>
+
+    <script>
+    fetch("https://hitscounter.dev/api/hit?output=json&url=https%3A%2F%2Fpatitosfortune.com")
+        .then(response => response.json())
+        .then(data => {
+            const count = String(data.total_hits).padStart(6, "0");
+
+            document.getElementById("visitor-number").textContent = count;
+        })
+        .catch(error => {
+            console.error("Visitor counter failed:", error);
+
+            document.getElementById("visitor-number").textContent = "------";
+        });
+    </script>
+
+    <div class="visitor-counter">
+        <span>🦆 PATITO</span>
+
+        <span id="visitor-number" class="counter-digits">
+            000000
+        </span>
+
+        <span>HAS WADDLED THROUGH HERE</span>
+    </div>
+
+    <footer>
+        © 2026 Patitos' Fortune (A+P)
+    </footer>
+
+    <!-- Cloudflare Web Analytics -->
+    <script
+        type="module"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "70a8d113a5ee4e5bb79f6a483252250e"}'>
+    </script>
+    <!-- End Cloudflare Web Analytics -->
+
+</body>
+</html>
