@@ -110,9 +110,11 @@
             </div>
         </section>
 
-        <!-- DRAFT (PS-SGC-001): not published until merged. Links below are the CURRENT valid URLs.
-             After the repository is transferred to the PatitosFortune org, update both URLs
-             (Pages address is not redirected by GitHub) and re-check the links. -->
+        <!-- DRAFT (PS-SGC-001): NOT FOR MERGE until the repository has been transferred to the
+             PatitosFortune org and BOTH links below return HTTP 200. Before the transfer they 404.
+             Pre-merge check:
+               curl -s -o /dev/null -w "%{http_code}" https://github.com/PatitosFortune/self-growing-personal-curriculum
+               curl -s -o /dev/null -w "%{http_code}" https://patitosfortune.github.io/self-growing-personal-curriculum/ -->
         <section class="section section-branded method" id="curriculum">
             <div class="section-heading">
                 <p class="eyebrow">Open source · MIT licence</p>
@@ -129,8 +131,8 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a class="button primary" href="https://patitos-fortune.github.io/self-growing-personal-curriculum/" rel="noopener">Look at the live example</a>
-                        <a class="button secondary" href="https://github.com/patitos-fortune/self-growing-personal-curriculum" rel="noopener">View on GitHub</a>
+                        <a class="button primary" href="https://patitosfortune.github.io/self-growing-personal-curriculum/" rel="noopener">Look at the live example</a>
+                        <a class="button secondary" href="https://github.com/PatitosFortune/self-growing-personal-curriculum" rel="noopener">View on GitHub</a>
                     </div>
                 </div>
 
