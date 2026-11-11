@@ -582,65 +582,16 @@ footer {
 
 .feature-art {
     position: relative;
-    min-height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    aspect-ratio: 2 / 1;
     overflow: hidden;
-}
-
-.feature-art-cabinet {
-    background: #24403F;
-    color: var(--paper);
-}
-
-.feature-art-cabinet::before {
-    content: "";
-    position: absolute;
-    width: 52%;
-    height: 72%;
-    border: 6px double #D7B47D;
-    transform: rotate(-7deg);
-    opacity: 0.8;
-}
-
-.cabinet-lettering {
-    position: relative;
-    font-family: Georgia, serif;
-    font-size: clamp(40px, 5vw, 66px);
-    line-height: 0.95;
-    text-align: center;
-}
-
-.cabinet-decoration {
-    position: absolute;
-    top: 16px;
-    right: 26px;
-    color: #D7B47D;
-    font-size: 38px;
-}
-
-.feature-art-quota {
-    flex-direction: column;
     background: var(--paper-deep);
 }
 
-.quota-mark {
-    font-family: Georgia, serif;
-    font-size: 146px;
-    line-height: 1;
-}
-
-.quota-mark span {
-    color: var(--ochre);
-}
-
-.quota-caption {
-    color: var(--slate);
-    font-family: Consolas, "Liberation Mono", monospace;
-    font-size: 11px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+.feature-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .feature-body {
@@ -822,10 +773,6 @@ footer {
 }
 
 @media (max-width: 820px) {
-    .feature-art {
-        min-height: 210px;
-    }
-
     .feature-footer {
         flex-direction: column;
         align-items: flex-start;
@@ -860,10 +807,6 @@ footer {
 @media (max-width: 560px) {
     .feature-grid {
         grid-template-columns: 1fr;
-    }
-
-    .feature-art {
-        min-height: 230px;
     }
 
     .feature-footer .button {

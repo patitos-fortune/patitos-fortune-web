@@ -28,7 +28,12 @@ A small duck in the live site's footer links to it as an easter egg.
 
 ```text
 ├── assets/
-│   └── geometric-duck.svg
+│   ├── geometric-duck.svg
+│   └── projects/
+│       ├── PROVENANCE.md
+│       ├── cabinet-of-puzzles/
+│       ├── patitos-rummy/
+│       └── quotaduck/
 ├── games/
 │   ├── catalogue.css
 │   └── index.html

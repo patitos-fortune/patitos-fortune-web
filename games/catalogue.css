@@ -55,90 +55,17 @@ h1 em {
 }
 
 .art {
-    height: 265px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    aspect-ratio: 2 / 1;
     overflow: hidden;
+    background: var(--paper-deep);
 }
 
-.art-cabinet {
-    background: #24403F;
-    color: var(--paper);
-}
-
-.art-cabinet::before {
-    content: "";
-    position: absolute;
-    width: 56%;
-    height: 74%;
-    border: 6px double #D7B47D;
-    transform: rotate(-7deg);
-    opacity: 0.75;
-}
-
-.art-word {
-    z-index: 1;
-    font-family: Georgia, serif;
-    font-size: clamp(48px, 5.2vw, 72px);
-    line-height: 0.95;
-    text-align: center;
-}
-
-.ornament {
-    position: absolute;
-    color: #D7B47D;
-    font-family: Georgia, serif;
-    font-size: 42px;
-}
-
-.ornament-a {
-    top: 16%;
-    right: 19%;
-}
-
-.ornament-b {
-    bottom: 8%;
-    left: 15%;
-}
-
-.art-rummy {
-    background: #587B72;
-}
-
-.playing-cards {
-    padding-top: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.playing-cards span {
-    width: 75px;
-    height: 111px;
-    padding: 10px;
-    border: 1px solid var(--ink);
-    border-radius: 7px;
-    background: #F7F1E8;
-    box-shadow: 3px 5px 0 rgba(16, 42, 54, 0.33);
-    color: var(--ink);
-    font-family: Georgia, serif;
-    font-size: 25px;
-    line-height: 1.2;
-}
-
-.playing-cards span:nth-child(1) {
-    transform: rotate(-13deg) translate(15px, 12px);
-}
-
-.playing-cards span:nth-child(2) {
-    z-index: 1;
-    transform: rotate(1deg);
-}
-
-.playing-cards span:nth-child(3) {
-    transform: rotate(13deg) translate(-15px, 12px);
+.art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-info {
@@ -174,6 +101,14 @@ h1 em {
     color: var(--slate);
 }
 
+.product-info > p.art-credit,
+.tool-content > p.art-credit {
+    margin: -14px 0 22px;
+    color: var(--slate);
+    font-size: 12px;
+    line-height: 1.45;
+}
+
 .status {
     margin-top: auto;
     padding-top: 17px;
@@ -197,17 +132,10 @@ h1 em {
     background: var(--paper-deep);
 }
 
-.tool-art > span {
-    color: var(--ink);
-    font-family: Georgia, serif;
-    font-size: 155px;
-    line-height: 1;
-}
-
-.duck-dot {
-    color: var(--ochre);
-    font-size: 40px;
-    vertical-align: top;
+.tool-art img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .tool-content {
@@ -252,10 +180,6 @@ footer a:not(.hatch-link):hover {
         align-items: flex-start;
         gap: 12px;
     }
-
-    .art {
-        height: 250px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -272,11 +196,7 @@ footer a:not(.hatch-link):hover {
     }
 
     .tool-art {
-        min-height: 205px;
-    }
-
-    .tool-art > span {
-        font-size: 110px;
+        min-height: 0;
     }
 
     .tool-content {
