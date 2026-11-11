@@ -10,6 +10,8 @@ It introduces:
 
 - the Creative Software Lab
 - selected work
+- a Games & Apps preview, with a separate catalogue at `/games/`
+- the Self-Growing Curriculum open-source template
 - the AI-native / evidence-minded working method
 - Patricia and Anna
 - `hello@patitosfortune.com`
@@ -27,6 +29,9 @@ A small duck in the live site's footer links to it as an easter egg.
 ```text
 ├── assets/
 │   └── geometric-duck.svg
+├── games/
+│   ├── catalogue.css
+│   └── index.html
 ├── hatch/
 │   ├── index.html
 │   └── style.css
