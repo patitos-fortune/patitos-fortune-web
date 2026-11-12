@@ -133,6 +133,20 @@ footer {
     color: #526575;
 }
 
+footer a {
+    padding: 6px 4px;
+
+    color: #8496a5;
+
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+footer a:focus-visible {
+    outline: 3px solid #f2c86b;
+    outline-offset: 3px;
+}
+
 @keyframes float {
     0%,
     100% {
