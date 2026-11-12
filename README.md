@@ -41,6 +41,11 @@ A small duck in the live site's footer links to it as an easter egg.
 ├── hatch/
 │   ├── index.html
 │   └── style.css
+├── privacy/
+│   ├── index.html
+│   └── privacy.css
+├── scripts/
+│   └── check-publication-placeholders.sh
 ├── CNAME
 ├── index.html
 ├── style.css
