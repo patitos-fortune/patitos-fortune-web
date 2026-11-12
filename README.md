@@ -29,6 +29,7 @@ A small duck in the live site's footer links to it as an easter egg.
 ```text
 ├── assets/
 │   ├── geometric-duck.svg
+│   ├── round-stamp.svg
 │   └── projects/
 │       ├── PROVENANCE.md
 │       ├── cabinet-of-puzzles/
