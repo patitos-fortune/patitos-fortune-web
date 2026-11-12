@@ -121,15 +121,14 @@ h1 em {
 
 .tool-card {
     display: grid;
-    grid-template-columns: 1fr 1.35fr;
+    grid-template-columns: 1.3fr 1fr;
 }
 
 .tool-art {
-    min-height: 300px;
     display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
-    background: var(--paper-deep);
 }
 
 .tool-art img {
@@ -139,7 +138,7 @@ h1 em {
 }
 
 .tool-content {
-    padding: 42px;
+    padding: 34px 36px;
     display: flex;
     flex-direction: column;
 }
@@ -180,6 +179,10 @@ footer a:not(.hatch-link):hover {
         align-items: flex-start;
         gap: 12px;
     }
+
+    .tool-card {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -189,14 +192,6 @@ footer a:not(.hatch-link):hover {
 
     .product-info {
         min-height: 245px;
-    }
-
-    .tool-card {
-        grid-template-columns: 1fr;
-    }
-
-    .tool-art {
-        min-height: 0;
     }
 
     .tool-content {
