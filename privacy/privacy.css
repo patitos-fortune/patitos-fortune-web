@@ -1,0 +1,60 @@
+/* Privacy page. Shared tokens, header, navigation and footer come from ../style.css. */
+
+.privacy {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 76px 32px 96px;
+}
+
+.privacy h1 {
+    max-width: none;
+    margin: 0 0 12px;
+    font-size: clamp(44px, 7vw, 72px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.privacy .updated {
+    margin: 0 0 12px;
+    color: var(--slate);
+    font-size: 14px;
+}
+
+.privacy h2 {
+    margin: 48px 0 12px;
+    font-size: clamp(26px, 4vw, 34px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+}
+
+.privacy p {
+    max-width: 680px;
+    margin: 0 0 16px;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.privacy a {
+    text-underline-offset: 3px;
+}
+
+/* Unresolved publication placeholders must be impossible to miss. */
+.blocker {
+    padding: 0 4px;
+    border: 1px dashed var(--rust);
+}
+
+footer a:not(.hatch-link) {
+    text-decoration: none;
+}
+
+footer a:not(.hatch-link):hover,
+footer a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+    .privacy {
+        padding: 58px 20px 72px;
+    }
+}
