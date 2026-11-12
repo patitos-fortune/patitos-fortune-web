@@ -28,13 +28,24 @@ A small duck in the live site's footer links to it as an easter egg.
 
 ```text
 ├── assets/
-│   └── geometric-duck.svg
+│   ├── geometric-duck.svg
+│   ├── round-stamp.svg
+│   └── projects/
+│       ├── PROVENANCE.md
+│       ├── cabinet-of-puzzles/
+│       ├── patitos-rummy/
+│       └── quotaduck/
 ├── games/
 │   ├── catalogue.css
 │   └── index.html
 ├── hatch/
 │   ├── index.html
 │   └── style.css
+├── privacy/
+│   ├── index.html
+│   └── privacy.css
+├── scripts/
+│   └── check-publication-placeholders.sh
 ├── CNAME
 ├── index.html
 ├── style.css
