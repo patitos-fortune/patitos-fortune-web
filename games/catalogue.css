@@ -131,6 +131,11 @@ h1 em {
     justify-content: center;
 }
 
+.tool-art picture {
+    display: block;
+    width: 100%;
+}
+
 .tool-art img {
     display: block;
     width: 100%;
