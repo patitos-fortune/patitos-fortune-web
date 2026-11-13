@@ -7,8 +7,11 @@ Record for the three project images used on the Games & Apps pages. The Self-Gro
 | Image | Project | What it is |
 |---|---|---|
 | `patitos-rummy/rummy-welcome-duck-*.webp` | Patitos Rummy | Cropped, web-optimized promotional derivative of the game's dark welcome-scene artwork. Created with OpenAI image-generation tools for Patitos Rummy in October 2026; not sourced from a third-party artist or image library. |
-| `quotaduck/quotaduck-social.png` | QuotaDuck | The project's social-preview artwork for the QuotaDuck Windows utility, shown complete and uncropped. |
-| `cabinet-of-puzzles/cabinet-booklet-board-*.webp` | Cabinet of Puzzles | Promotional illustration of a concept booklet beside a puzzle board, prepared for this website. It illustrates a project in development and is not a release. |
+| `quotaduck/quotaduck-flyout-framed-*.png` | QuotaDuck | Website preview of the QuotaDuck window, from the project's own interface render for release candidate 1.0.0-rc.2, shown with fixed example values (not live data) and framed for this website. Used on wider screens. |
+| `quotaduck/quotaduck-flyout-panel-700x583.png` | QuotaDuck | One provider panel from the same render, used on small screens. Example values, not live data. |
+| `cabinet-of-puzzles/cabinet-number-square-*.webp` | Cabinet of Puzzles | Promotional illustration of a concept puzzle board, a closer crop of the illustration prepared for this website. It illustrates a project in development and is not a release. |
+
+Earlier images kept in the repository but no longer shown on the site: `quotaduck/quotaduck-social.png` (the project's social-preview artwork) and `cabinet-of-puzzles/cabinet-booklet-board-*.webp` (the wider crop of the same Cabinet illustration, with a concept booklet beside the board).
 
 ## Patitos Rummy artwork authorization
 

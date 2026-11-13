@@ -599,6 +599,12 @@ footer {
     background: var(--paper-deep);
 }
 
+.feature-art picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .feature-art img {
     display: block;
     width: 100%;
@@ -629,6 +635,12 @@ footer {
 .feature-body p {
     margin: 0 0 26px;
     color: var(--slate);
+}
+
+.feature-body p.feature-note {
+    margin: -14px 0 22px;
+    font-size: 12px;
+    line-height: 1.45;
 }
 
 .feature-action {
@@ -819,6 +831,11 @@ footer {
 @media (max-width: 560px) {
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* The phone image for this card is a single 700 x 583 panel. */
+    .feature-art-panel {
+        aspect-ratio: 700 / 583;
     }
 
     .feature-footer .button {
